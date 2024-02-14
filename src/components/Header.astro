@@ -1,0 +1,43 @@
+<header class="flex justify-between items-center">
+  <img src="/assets/images/logo.svg" alt="logo" />
+  <button id="open" class="sm:hidden"
+    ><img src="/assets/images/icon-menu.svg" alt="icon-menu" /></button
+  >
+  <nav class="hidden sm:flex sm:flex-row sm:items-center">
+    <ul class="flex flex-row gap-5">
+      <li class="hover:text-SoftRed"><a href="#">Home </a></li>
+      <li class="hover:text-SoftRed"><a href="#">New</a></li>
+      <li class="hover:text-SoftRed"><a href="#">Popular</a></li>
+      <li class="hover:text-SoftRed"><a href="#">Trending</a></li>
+      <li class="hover:text-SoftRed"><a href="#">Categories</a></li>
+    </ul>
+  </nav>
+  <nav
+    id="nav-mobile"
+    class="fixed top-0 right-0 bottom-0 z-50 bg-OffWhite w-4/6 flex flex-col p-8 translate-x-full transition-transform duration-200 ease-in-out"
+  >
+    <button id="close" class="self-end"
+      ><img src="/assets/images/icon-menu-close.svg" alt="icon-menu" /></button
+    >
+    <ul class="flex flex-col gap-4 pt-24">
+      <li class="hover:text-SoftRed"><a href="#">Home </a></li>
+      <li class="hover:text-SoftRed"><a href="#">New</a></li>
+      <li class="hover:text-SoftRed"><a href="#">Popular</a></li>
+      <li class="hover:text-SoftRed"><a href="#">Trending</a></li>
+      <li class="hover:text-SoftRed"><a href="#">Categories</a></li>
+    </ul>
+  </nav>
+</header>
+
+<script defer>
+  const open = document.getElementById("open");
+  const close = document.getElementById("close");
+  const navMobile = document.getElementById("nav-mobile");
+
+  open.addEventListener("click", () => {
+    navMobile.classList.remove("translate-x-full");
+  });
+  close.addEventListener("click", () => {
+    navMobile.classList.add("translate-x-full");
+  });
+</script>

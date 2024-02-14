@@ -1,0 +1,44 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="description" content="Astro description"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/assets/images/favicon-32x32.png"><meta name="generator" content="Astro v4.3.6"><title>News homepage</title><link rel="stylesheet" href="/_astro/index.CoBpnMxO.css" /></head> <body class="bg-OffWhite">  <main class="max-w-2xl p-6 md:max-w-screen-md mx-auto lg:max-w-5xl lg:mt-10 relative"> <header class="flex justify-between items-center"> <img src="/assets/images/logo.svg" alt="logo"> <button id="open" class="sm:hidden"><img src="/assets/images/icon-menu.svg" alt="icon-menu"></button> <nav class="hidden sm:flex sm:flex-row sm:items-center"> <ul class="flex flex-row gap-5"> <li class="hover:text-SoftRed"><a href="#">Home </a></li> <li class="hover:text-SoftRed"><a href="#">New</a></li> <li class="hover:text-SoftRed"><a href="#">Popular</a></li> <li class="hover:text-SoftRed"><a href="#">Trending</a></li> <li class="hover:text-SoftRed"><a href="#">Categories</a></li> </ul> </nav> <nav id="nav-mobile" class="fixed top-0 right-0 bottom-0 z-50 bg-OffWhite w-4/6 flex flex-col p-8 translate-x-full transition-transform duration-200 ease-in-out"> <button id="close" class="self-end"><img src="/assets/images/icon-menu-close.svg" alt="icon-menu"></button> <ul class="flex flex-col gap-4 pt-24"> <li class="hover:text-SoftRed"><a href="#">Home </a></li> <li class="hover:text-SoftRed"><a href="#">New</a></li> <li class="hover:text-SoftRed"><a href="#">Popular</a></li> <li class="hover:text-SoftRed"><a href="#">Trending</a></li> <li class="hover:text-SoftRed"><a href="#">Categories</a></li> </ul> </nav> </header> <script defer>
+  const open = document.getElementById("open");
+  const close = document.getElementById("close");
+  const navMobile = document.getElementById("nav-mobile");
+
+  open.addEventListener("click", () => {
+    navMobile.classList.remove("translate-x-full");
+  });
+  close.addEventListener("click", () => {
+    navMobile.classList.add("translate-x-full");
+  });
+</script> <section class="mt-8 md:grid md:grid-cols-3"> <section class="md:grid md:grid-cols-2 md:col-span-2"> <picture class="md:col-span-2"> <source srcset="/assets/images/image-web-3-desktop.jpg" media="(min-width: 768px)"> <img src="/assets/images/image-web-3-mobile.jpg" alt="image web 4"> </picture> <h1 class="text-5xl font-extrabold my-4">The Bright Future of Web 3.0?</h1> <div> <p class="text-DarkGrayishBlue text-lg mb-4">
+We dive into the next evolution of the web that claims to put the power
+        of the platforms back into the hands of the people. But is it really
+        fulfilling its promise?
+</p> <button class="bg-SoftRed text-OffWhite px-10 py-4 uppercase tracking-widest font-light mb-4 hover:bg-VeryDarkBlue">
+Read more
+</button> </div> </section> <section class="bg-VeryDarkBlue text-OffWhite p-8"> <h2 class="text-SoftOrange text-4xl mb-6">New</h2> <ul> <li> <h3 class="text-xl mb-2 hover:text-SoftOrange">
+Hydrogen VS Electric Cars
+</h3> <p class="text-sm text-DarkGrayishBlue mb-6">
+Will hydrogen-fueled cars ever catch up to EVs?
+</p> </li> <hr> <li> <h3 class="text-xl my-4 hover:text-SoftOrange">
+The Downsides of AI Artistry
+</h3> <p class="text-sm text-DarkGrayishBlue mb-6">
+What are the possible adverse effects of on-demand AI image
+          generation?
+</p> </li> <hr> <li> <h3 class="text-xl my-4 hover:text-SoftOrange">
+Is VC Funding Drying Up?
+</h3> <p class="text-sm text-DarkGrayishBlue">
+Private funding by VC firms is down 50% YOY. We take a look at what
+          that means.
+</p> </li> </ul> </section> </section> <footer class="grid grid-cols-1 mt-8 gap-4 md:grid-cols-3"> <a href="#" class="grid grid-cols-3 gap-4"> <img src="/assets/images/image-retro-pcs.jpg" alt="image retro pcs"> <div class="col-span-2"> <span class="text-DarkGrayishBlue text-3xl font-extrabold">01</span> <h3 class="text-VeryDarkBlue font-extrabold py-2 hover:text-SoftRed">
+Reviving Retro PCs
+</h3> <p class="text-sm leading-6">
+What happens when old PCs are given modern upgrades?
+</p> </div> </a> <a href="#" class="grid grid-cols-3 gap-4"> <img src="/assets/images/image-top-laptops.jpg" alt="image retro pcs"> <div class="col-span-2"> <span class="text-DarkGrayishBlue text-3xl font-extrabold">02</span> <h3 class="text-VeryDarkBlue font-extrabold py-2 hover:text-SoftRed">
+Top 10 Laptops of 2022
+</h3> <p class="text-sm leading-6">
+Our best picks for various needs and budgets.
+</p> </div> </a> <a href="#" class="grid grid-cols-3 gap-4"> <img src="/assets/images/image-gaming-growth.jpg" alt="image retro pcs"> <div class="col-span-2"> <span class="text-DarkGrayishBlue text-3xl font-extrabold">03</span> <h3 class="text-VeryDarkBlue font-extrabold py-2 hover:text-SoftRed">
+The Growth of Gaming
+</h3> <p class="text-sm leading-6">
+How the pandemic has sparked fresh opportunities.
+</p> </div> </a> </footer> </main>  </body></html>
